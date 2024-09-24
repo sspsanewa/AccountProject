@@ -36,6 +36,6 @@ const AddEvent = (props) => {
 
 AddEvent.propTypes = {
   show: PropTypes.bool.isRequired,
-  onHide: PropTypes.bool.isRequired
+  onHide: PropTypes.func.isRequired
 };
 export default AddEvent;

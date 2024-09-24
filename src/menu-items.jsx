@@ -46,7 +46,7 @@ const menuItems = {
               id: 'client',
               title: 'Client List',
               type: 'item',
-              url: '/client/client-list '
+              url: '/client/client-list'
             },
             {
               id: 'Portals',

@@ -7,6 +7,10 @@ import 'chart.js/auto';
 import { Link } from 'react-router-dom';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import AddEvent from 'components/Model/AddEvent';
+import growth from '../../assets/images/other/growth.svg';
+import donutchart from '../../assets/images/other/donutchart.svg';
+import clipboard from '../../assets/images/other/clipboard.svg';
+
 const Dashboard = () => {
   const data = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -117,7 +121,7 @@ const Dashboard = () => {
                       </Card.Header>
                       <Card.Body>
                         <div className="text-center mb-3">
-                          <i className="feather icon-calendar" style={{ fontSize: '60px' }} />
+                          <img src={growth} alt="growth" />
                         </div>
                         <Card.Subtitle className="mb-2">Track your growth rate</Card.Subtitle>
                         <Card.Text>The growth rate chart will update monthly to show how quickly you are growing.</Card.Text>
@@ -139,7 +143,7 @@ const Dashboard = () => {
                       </Card.Header>
                       <Card.Body className="text-center">
                         <div className=" mb-3">
-                          <i className="feather icon-calendar" style={{ fontSize: '60px' }} />
+                          <img src={donutchart} alt="donutchart" />
                         </div>
                         <Card.Subtitle className="mb-2">We need more information</Card.Subtitle>
                         <Card.Text>When adding clients, be sure to add source information</Card.Text>
@@ -199,7 +203,7 @@ const Dashboard = () => {
                         <Card>
                           <Card.Body className="text-center">
                             <div className=" mb-3">
-                              <i className="feather icon-calendar" style={{ fontSize: '60px' }} />
+                              <img src={clipboard} alt="clipboard" />
                             </div>
                             <Card.Subtitle className="mb-2">Once you’ve assigned some tasks you can track them here</Card.Subtitle>
                             <Card.Text>You can add tasks by clicking the ‘+’ button in the top left.</Card.Text>

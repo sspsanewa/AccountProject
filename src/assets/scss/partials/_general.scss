@@ -10,6 +10,37 @@ body {
   position: relative;
 }
 
+/* src/App.css or any relevant CSS file */
+.scrollable-table {
+  overflow-x: auto;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.span-heading1 {
+  width: 25px;
+  height: 25px;
+  background: blue;
+  border-radius: 100%;
+  font-weight: bold;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.span-heading2 {
+  width: 25px;
+  height: 25px;
+  background: gray;
+  border-radius: 100%;
+  font-weight: bold;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
 * {
   &:focus {
     outline: none;
