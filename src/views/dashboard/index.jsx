@@ -50,11 +50,11 @@ const Dashboard = () => {
             <b>Welcome Hunter</b>
           </h5>
           <hr />
-          <Tabs defaultActiveKey="overview">
+          <Tabs variant="pills" defaultActiveKey="overview">
             <Tab eventKey="overview" title="Overview">
               <Row>
                 <Col md={3}>
-                  <Card>
+                  <Card className="border border-ternary rounded">
                     <Card.Header>
                       WEDNESDAY, SEPTEMBER
                       <br /> 18
@@ -70,7 +70,7 @@ const Dashboard = () => {
                   </Card>{' '}
                 </Col>
                 <Col md={9}>
-                  <Card className="mb-4">
+                  <Card className="border border-ternary rounded mb-4">
                     <Card.Header className="d-flex justify-content-between align-items-center">
                       <Card.Title>Task</Card.Title>
                       <Link>View all task</Link>
@@ -115,7 +115,7 @@ const Dashboard = () => {
                 <Col md={3}>
                   <Row>
                     {' '}
-                    <Card>
+                    <Card className="border border-ternary rounded">
                       <Card.Header>
                         <Card.Title>Client Growth</Card.Title>
                       </Card.Header>
@@ -137,7 +137,7 @@ const Dashboard = () => {
                   </Row>
                   <Row>
                     {' '}
-                    <Card>
+                    <Card className="border border-ternary rounded">
                       <Card.Header>
                         <Card.Title>Client Sources</Card.Title>
                       </Card.Header>
@@ -152,7 +152,7 @@ const Dashboard = () => {
                   </Row>
                 </Col>
                 <Col md={9}>
-                  <Card className="mb-4">
+                  <Card className="border border-ternary rounded mb-4">
                     <Card.Header>
                       <Card.Title>Workload</Card.Title>
                     </Card.Header>

@@ -17,9 +17,9 @@ const Inbox = () => {
             <b>Inbox</b>
           </h5>
           <hr />
-          <Tabs defaultActiveKey="email">
+          <Tabs variant="pills" defaultActiveKey="email">
             <Tab eventKey="email" title="Email">
-              <Card>
+              <Card className="border border-ternary rounded">
                 <Card.Body className="text-center">
                   <i className="feather icon-mail" style={{ fontSize: '60px' }} />
                   <CardSubtitle>
@@ -40,7 +40,7 @@ const Inbox = () => {
               </Card>{' '}
             </Tab>
             <Tab eventKey="comments" title="Comments">
-              <Card>
+              <Card className="border border-ternary rounded">
                 <Card.Body className="text-center">
                   <i className="feather icon-message-square" style={{ fontSize: '60px' }} />
                   <CardSubtitle>
